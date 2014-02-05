@@ -1,6 +1,7 @@
 //binarySearchTree.c
 //
 //Created by Eric Brunton on 2/4/2014
+//
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -43,12 +44,12 @@ int main(int argc, char *argv[])
 		switch(i) {
 			case 1:				//Print tree inorder
 				printf("\nThe contents of this Binary Search Tree in order are: ");
-				printInOrder(root);
+				inOrder(root);
 				printf("\n\n");
 				break;
 			case 2:				//Print tree preorder
 				printf("\nThe contents of this Binary Search Tree are: ");
-				printPreOrder(root);
+				preOrder(root);
 				printf("\n\n");
 				break;
 			case 3:				//Print size
@@ -111,7 +112,7 @@ void insertNode(struct btnode *new,struct btnode *root)
 }
 
 //print tree in order, start from left subtree, print parent, then print right subtree
-void printInOrder(struct btnode *root)
+void inOrder(struct btnode *root)
 {
 	if(root != NULL)
 	{
@@ -122,7 +123,7 @@ void printInOrder(struct btnode *root)
 }
 
 //print tree in pre order, start from parent, print left subtree, then print right subtree
-void printPreOrder(struct btnode *root)
+void preOrder(struct btnode *root)
 {
 	if(root != NULL)
 	{
@@ -132,7 +133,7 @@ void printPreOrder(struct btnode *root)
 	}
 }
 
-//return the number of nodes in the tree, add one to i for each node accessed not NULL
+//print the number of nodes in the tree, add one to i for each node accessed not NULL
 int sizeTree(struct btnode *root)
 {
 	int i = 0;
@@ -150,7 +151,7 @@ int sizeTree(struct btnode *root)
 	return i;
 }
 
-//returns max height of tree, if there's a node to right or left, add one to that and compare values to find max
+//print max height of tree, if there's a node to right or left, add one to that and compare values to find max
 int maxHeight(struct btnode *root)
 {
 	int left = 0, right = 0;
