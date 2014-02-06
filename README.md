@@ -20,5 +20,7 @@ Is used through a menu system (switch) to call functions and print results.
 	- Determines and returns the maximum height of the tree from root to leaf.
 - minValue
 	- Finds and prints the node with the minimum value within the tree.
+- maxValue
+	- Finds and prints the node with the maximum value within the tree.
 - deallocateTree
 	- Deallocates and frees all memory that was allocated when each node struct was created.

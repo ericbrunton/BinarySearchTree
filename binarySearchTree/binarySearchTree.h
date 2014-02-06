@@ -16,6 +16,7 @@ void printPreOrder(struct btnode *root);
 int sizeTree(struct btnode *root);
 int maxHeight(struct btnode *root);
 void minValue(struct btnode *root);
+void maxValue(struct btnode *root);
 void deallocateTree(struct btnode *root);
 
 #endif

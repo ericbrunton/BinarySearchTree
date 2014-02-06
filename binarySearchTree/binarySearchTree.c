@@ -1,5 +1,4 @@
 //binarySearchTree.c
-//
 //Created by Eric Brunton on 2/4/2014
 
 #include <stdio.h>
@@ -179,6 +178,19 @@ void minValue(struct btnode *root)
 	else
 	{
 		minValue(root->left);
+	}
+}
+
+//prints maximum value in the tree, find right most node in the entire tree
+void maxValue(struct btnode *root)
+{
+	if(root->right == NULL)
+	{
+		printf("\nThe maximum value in this Binary Search tree is %d\n\n",root->data);
+	}
+	else
+	{
+		maxValue(root->right);
 	}
 }
 
