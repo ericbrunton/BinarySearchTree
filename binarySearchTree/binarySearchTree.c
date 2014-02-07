@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 	i = 1;
 	while(i != 0)
 	{
-		printf("Please enter 0, 1, 2, 3, 4, or 5 \n\t 0 - Exit \n\t 1 - Print Inorder \n\t 2 - Print Preorder \n\t 3 - Print Size \n\t 4 - Print Max Height \n\t 5 - Print Min Value \n Answer: ");
+		printf("Please enter 0, 1, 2, 3, 4, or 5 \n\t 0 - Exit \n\t 1 - Print Inorder \n\t 2 - Print Preorder \n\t 3 - Print Size \n\t 4 - Print Max Height \n\t 5 - Print Min Value \n\t 6 - Print Max Value \n Answer: ");
 		scanf("%d",&i);
 
 		switch(i) {
@@ -60,6 +60,9 @@ int main(int argc, char *argv[])
 				break;
 			case 5:				//Print Min Value
 				minValue(root);
+				break;
+			case 6:
+				maxValue(root);
 				break;
 			default:			//default: exit program
 				break;
